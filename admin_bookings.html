@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - Bookings</title>
+  <link rel="stylesheet" href="flights.css" />
+</head>
+<body>
+
+  <div class="top-bar">
+    <div>Welcome, Admin</div>
+    <div class="top-buttons">
+      <button onclick="window.location.href='admin.html'">Dashboard</button>
+      <button onclick="window.location.href='index.html'">Logout</button>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="sidebar">
+      <h3>Admin Actions</h3>
+      <ul>
+        <li onclick="window.location.href='addflight.html'">Add Flight</li>
+        <li onclick="window.location.href='admin_bookings.html'">View Bookings</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h1>All User Bookings</h1>
+      <div id="bookingsContainer" class="flights-grid"></div>
+    </div>
+  </div>
+
+  <script>
+    async function loadBookings() {
+      const bookingsRes = await fetch("http://localhost:5000/bookings");
+      const bookings = await bookingsRes.json();
+
+      const container = document.getElementById("bookingsContainer");
+      container.innerHTML = "";
+
+      for (const booking of bookings) {
+        const userRes = await fetch("http://localhost:5000/users/" + booking.userId);
+        const user = await userRes.json();
+
+        const flightRes = await fetch("http://localhost:5000/flights/" + booking.flightId);
+        const flight = await flightRes.json();
+
+        const card = document.createElement("div");
+        card.className = "flight-card";
+
+        card.innerHTML = `
+          <h3>${flight.from} ➜ ${flight.to}</h3>
+          <p><strong>Date:</strong> ${flight.date}</p>
+          <p><strong>Time:</strong> ${flight.time}</p>
+          <p><strong>Booked By:</strong> ${user.name}</p>
+          <p><strong>Seats:</strong> ${booking.seats}</p>
+          <p><strong>Payment:</strong> ${booking.paymentMethod}</p>
+        `;
+
+        container.appendChild(card);
+      }
+    }
+
+    window.onload = loadBookings;
+  </script>
+</body>
+</html>

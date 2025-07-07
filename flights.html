@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flight Booking</title>
+  <link rel="stylesheet" href="flights.css" />
+</head>
+<body>
+
+  <div class="top-bar">
+    <div>Welcome, <span id="username">User</span></div>
+    <div class="top-buttons">
+      <button onclick="window.location.href='mybookings.html'">My Bookings</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="sidebar">
+      <h3>Your Bookings</h3>
+      <ul id="bookingList"></ul>
+    </div>
+
+    <div class="container">
+      <h1>Search Flights</h1>
+      <div class="search-box">
+        <input type="text" id="fromInput" placeholder="From" />
+        <input type="text" id="toInput" placeholder="To" />
+        <input type="date" id="dateInput" />
+        <button onclick="searchFlights()">Search</button>
+      </div>
+
+      <div class="flights-grid" id="flightsContainer"></div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="cancelModal">
+    <div class="modal-content">
+      <h3>Confirm Cancellation</h3>
+      <p id="cancelFlightText"></p>
+      <div class="modal-buttons">
+        <button id="modal-confirm">Yes, Cancel</button>
+        <button id="modal-cancel">No</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="flights.js" defer></script>
+</body>
+</html>

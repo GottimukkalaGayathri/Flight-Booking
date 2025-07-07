@@ -1,0 +1,332 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Gayathri",
+      "email": "gayathri@email.com",
+      "password": "12345"
+    },
+    {
+      "id": "1797",
+      "name": "Gayathri",
+      "email": "gayathri24082004@gmail.com",
+      "password": "Gayathri@24"
+    },
+    {
+      "id": "2001",
+      "name": "Ravi Teja",
+      "email": "ravi@gmail.com",
+      "password": "ravi@123"
+    },
+    {
+      "id": "3002",
+      "name": "Sneha",
+      "email": "sneha@example.com",
+      "password": "sneha456"
+    }
+  ],
+  "flights": [
+    {
+      "id": "f1",
+      "from": "Delhi",
+      "to": "Mumbai",
+      "date": "2025-05-30",
+      "time": "08:30",
+      "price": 3500,
+      "seats": 25,
+      "bookedSeats": 25
+    },
+    {
+      "id": "f2",
+      "from": "Chennai",
+      "to": "Bengaluru",
+      "date": "2025-06-10",
+      "time": "10:15",
+      "price": 1500,
+      "seats": 30,
+      "bookedSeats": 10
+    },
+    {
+      "id": "f3",
+      "from": "Bangalore",
+      "to": "Kolkata",
+      "date": "2025-06-21",
+      "time": "12:45",
+      "price": 5000,
+      "seats": 25,
+      "bookedSeats": 25
+    },
+    {
+      "id": "f4",
+      "from": "Pune",
+      "to": "Goa",
+      "date": "2025-06-21",
+      "time": "09:15",
+      "price": 2500,
+      "seats": 25,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f5",
+      "from": "Jaipur",
+      "to": "Ahmedabad",
+      "date": "2025-06-22",
+      "time": "18:20",
+      "price": 2800,
+      "seats": 30,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f6",
+      "from": "Jaipur",
+      "to": "Chennai",
+      "date": "2025-06-22",
+      "time": "09:20",
+      "price": 4800,
+      "seats": 30,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f7",
+      "from": "Gannavaram",
+      "to": "Hyderabad",
+      "date": "2025-06-23",
+      "time": "01:40",
+      "price": 2300,
+      "seats": 25,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f8",
+      "from": "Vishakapatnam",
+      "to": "Goa",
+      "date": "2025-06-23",
+      "time": "03:35",
+      "price": 3000,
+      "seats": 30,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f9",
+      "from": "Ahmedabad",
+      "to": "Vishakapatnam",
+      "date": "2025-06-25",
+      "time": "08:15",
+      "price": 3100,
+      "seats": 30,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f10",
+      "from": "Bengaluru",
+      "to": "Delhi",
+      "date": "2025-06-25",
+      "time": "08:15",
+      "price": 3200,
+      "seats": 25,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f11",
+      "from": "Ahmedabad",
+      "to": "London",
+      "date": "2025-06-28",
+      "time": "01:09",
+      "price": 25000,
+      "seats": 40,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f12",
+      "from": "Mumbai",
+      "to": "Dubai",
+      "date": "2025-07-02",
+      "time": "06:10",
+      "price": 15000,
+      "seats": 0,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f14",
+      "from": "Hyderabad",
+      "to": "Singapore",
+      "date": "2025-07-10",
+      "time": "09:00",
+      "price": 22000,
+      "seats": 40,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f15",
+      "from": "Goa",
+      "to": "Pune",
+      "date": "2025-07-15",
+      "time": "14:30",
+      "price": 2600,
+      "seats": 30,
+      "bookedSeats": 2
+    },
+    {
+      "id": "f16",
+      "from": "Chennai",
+      "to": "Tokyo",
+      "date": "2025-07-20",
+      "time": "01:15",
+      "price": 35000,
+      "seats": 45,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f17",
+      "from": "Kolkata",
+      "to": "Dhaka",
+      "date": "2025-07-22",
+      "time": "07:30",
+      "price": 12000,
+      "seats": 30,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f18",
+      "from": "Bangalore",
+      "to": "Singapore",
+      "date": "2025-07-25",
+      "time": "11:00",
+      "price": 21000,
+      "seats": 40,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f19",
+      "from": "Delhi",
+      "to": "Goa",
+      "date": "2025-08-01",
+      "time": "16:20",
+      "price": 4700,
+      "seats": 25,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f20",
+      "from": "Mumbai",
+      "to": "Chennai",
+      "date": "2025-08-05",
+      "time": "10:00",
+      "price": 3300,
+      "seats": 30,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f21",
+      "from": "Delhi",
+      "to": "Bangkok",
+      "date": "2025-08-10",
+      "time": "05:30",
+      "price": 19000,
+      "seats": 40,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f22",
+      "from": "Hyderabad",
+      "to": "Paris",
+      "date": "2025-08-15",
+      "time": "23:00",
+      "price": 46000,
+      "seats": 35,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f23",
+      "from": "Pune",
+      "to": "Gannavaram",
+      "date": "2025-08-20",
+      "time": "08:15",
+      "price": 2700,
+      "seats": 30,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f24",
+      "from": "Jaipur",
+      "to": "Lucknow",
+      "date": "2025-08-25",
+      "time": "17:45",
+      "price": 3100,
+      "seats": 30,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f25",
+      "from": "Bengaluru",
+      "to": "Sydney",
+      "date": "2025-08-30",
+      "time": "03:30",
+      "price": 54000,
+      "seats": 50,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f26",
+      "from": "Mumbai",
+      "to": "Toronto",
+      "date": "2025-09-05",
+      "time": "06:00",
+      "price": 60000,
+      "seats": 50,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f27",
+      "from": "Hyderabad",
+      "to": "Dubai",
+      "date": "2025-09-10",
+      "time": "12:00",
+      "price": 18000,
+      "seats": 40,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f28",
+      "from": "Chennai",
+      "to": "Mumbai",
+      "date": "2025-09-15",
+      "time": "09:15",
+      "price": 3000,
+      "seats": 30,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f29",
+      "from": "Delhi",
+      "to": "Bangalore",
+      "date": "2025-09-20",
+      "time": "14:00",
+      "price": 3400,
+      "seats": 30,
+      "bookedSeats": 0
+    },
+    {
+      "id": "f30",
+      "from": "Kolkata",
+      "to": "Dubai",
+      "date": "2025-09-25",
+      "time": "20:00",
+      "price": 24000,
+      "seats": 40,
+      "bookedSeats": 0
+    }
+  ],
+  "bookings": [
+    {
+      "id": "ae24",
+      "userId": "1797",
+      "flightId": "f15",
+      "date": "2025-07-15",
+      "time": "14:30",
+      "seats": 2,
+      "paymentMethod": "Credit Card",
+      "paymentDetails": "595984"
+    }
+  ]
+}

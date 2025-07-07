@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+  <div class="top-bar">
+    <div>
+      <strong>Welcome, Admin</strong>
+      <span id="clock" style="margin-left: 20px; font-weight: normal;"></span>
+    </div>
+    <div class="top-buttons">
+      <button onclick="window.location.href='index.html'">Logout</button>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="sidebar">
+      <h3>Admin Panel</h3>
+      <ul>
+        <li onclick="window.location.href='addflight.html'">Add Flight</li>
+        <li onclick="window.location.href='admin_bookings.html'">View Bookings</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h1>Upcoming Flights</h1>
+      <div class="flights-grid" id="upcomingFlightsList"></div>
+
+      <h1 style="margin-top: 40px;">Past Flights</h1>
+      <div class="flights-grid" id="pastFlightsList"></div>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

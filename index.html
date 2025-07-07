@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login to AirFly!</title>
+  <link rel="stylesheet" href="auth.css" />
+</head>
+<body>
+  <div class="auth-container">
+    <h2>Login to AirFly!</h2>
+    <form id="loginForm">
+      <input type="email" id="loginEmail" placeholder="Email" required />
+      <input type="password" id="loginPassword" placeholder="Password" required />
+      <button type="submit">Login</button>
+      <p id="errorMsg" class="error-message"></p>
+    </form>
+    
+    <button id="adminLoginBtn" class="admin-btn">Login as Admin</button>
+    
+    <p>Don't have an account? <a href="register.html">Register</a></p>
+  </div>
+  <script src="auth.js"></script>
+</body>
+</html>
